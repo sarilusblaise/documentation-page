@@ -12,6 +12,9 @@ const closeBtn = DomElement("#close-btn");
 const openBtn = DomElement("#open-btn");
 const navbar = DomElement("#navbar");
 const display = DomElement(".display");
+const onLightBtn = DomElement(".light-btn-on");
+const offLightBtn = DomElement(".light-btn-off");
+const linkItems = document.querySelectorAll(".link-item");
 
 display.addEventListener("click", function (event) {
 	const id = event.target.id;
@@ -25,4 +28,26 @@ display.addEventListener("click", function (event) {
 
 closeBtn.addEventListener("click", () => {
 	navbar.classList.add("hide-navbar");
+});
+
+onLightBtn.addEventListener("click", () => {
+	document.body.classList.add("dark-mode");
+	offLightBtn.classList.remove("hide-btnLightDarkMode");
+	onLightBtn.classList.add("hide-btnLightDarkMode");
+});
+
+offLightBtn.addEventListener("click", () => {
+	document.body.classList.remove("dark-mode");
+	offLightBtn.classList.add("hide-btnLightDarkMode");
+	onLightBtn.classList.remove("hide-btnLightDarkMode");
+});
+
+navbar.addEventListener("click", (event) => {
+	const classList = event.target.classList;
+	if (classList.contains("nav-link")) {
+		linkItems.forEach((item) => {
+			item.classList.remove("active");
+		});
+		event.target.parentNode.classList.add("active");
+	}
 });
