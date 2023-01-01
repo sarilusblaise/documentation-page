@@ -15,7 +15,9 @@ const display = DomElement(".display");
 const onLightBtn = DomElement(".light-btn-on");
 const offLightBtn = DomElement(".light-btn-off");
 const linkItems = document.querySelectorAll(".link-item");
+const header = DomElement(".header");
 
+//navbar behavior
 display.addEventListener("click", function (event) {
 	const id = event.target.id;
 	console.log(id);
@@ -26,6 +28,19 @@ display.addEventListener("click", function (event) {
 	}
 });
 
+navbar.addEventListener("click", (event) => {
+	const classList = event.target.classList;
+	if (classList.contains("nav-link")) {
+		linkItems.forEach((item) => {
+			item.classList.remove("active");
+		});
+		event.target.parentNode.classList.add("active");
+	}
+});
+
+navbar.style.top = `${header.getBoundingClientRect().height}px`;
+
+//switch between light and dark mode
 closeBtn.addEventListener("click", () => {
 	navbar.classList.add("hide-navbar");
 });
@@ -40,14 +55,4 @@ offLightBtn.addEventListener("click", () => {
 	document.body.classList.remove("dark-mode");
 	offLightBtn.classList.add("hide-btnLightDarkMode");
 	onLightBtn.classList.remove("hide-btnLightDarkMode");
-});
-
-navbar.addEventListener("click", (event) => {
-	const classList = event.target.classList;
-	if (classList.contains("nav-link")) {
-		linkItems.forEach((item) => {
-			item.classList.remove("active");
-		});
-		event.target.parentNode.classList.add("active");
-	}
 });
