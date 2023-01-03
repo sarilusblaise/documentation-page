@@ -1,5 +1,21 @@
-# FCC Test Suite Template
+# Documentation page
+This project design is  documentation page.This is one of the freeCodeCamp's responsive web design to get my certificate.
 
-**Fork** this project (do not open a Pull Request) to start working on any of freeCodeCamp's responsive web design course projects. Select the project from the dropdown menu and run the tests to see which requirements your project is still missing.
+## Build with:
+HTML5, CSS3, JS
 
-You don't know how to fork a project? [Click hear](https://help.github.com/articles/fork-a-repo/) to learn how to do it.
+## Live demo
+
+# Getting Started
+To get started with this project, follow the instructions below :
+
+Clone the project using git clone or just copy the command below:
+
+# Author 
+GitHub:
+Twitter:
+LinkedIn:
+# Contributing
+Contributions, issues, and feature requests are welcome!
+Feel free to check the issues page.
+
