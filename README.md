@@ -26,5 +26,5 @@ git clone https://github.com/Sarilus-Blaise/documentation-page.git
 
 # Contributing
 Contributions, issues, and feature requests are welcome!
-Feel free to check the [issues page](https://github.com/Sarilus-Blaise/documentation-page/issues).
+Feel free to check the [issues page](https://github.com/sarilusblaise/documentation-page/issues).
 
