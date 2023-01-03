@@ -19,9 +19,9 @@ git clone https://github.com/Sarilus-Blaise/documentation-page.git
 
 
 # Author 
-* LinkedIn: [sarilusblondywadley](https://www.linkedin.com/in/sarilusblondywadley/) 
-* GitHub: [Sarilus-Blaise](https://github.com/Sarilus-Blaise) 
-* Twitter: [WadleyBlondy](https://twitter.com/WadleyBlondy)
+* LinkedIn: <a href="https://www.linkedin.com/in/sarilusblaise/" target="_blank">sarilusblaise</a>
+* GitHub: <a href="https://github.com/sarilusblaise" target="_blank">sarilusblaise</a>
+* Twitter: <a href="https://twitter.com/sarilusblaise" target="_blank">sarilusblaise</a>
   
 
 # Contributing
