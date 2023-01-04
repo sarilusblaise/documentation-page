@@ -1,5 +1,5 @@
 # Documentation page
-This project design is  documentation page.This project is one of the freeCodeCamp's required projects to get my responsive web design certification after spending hundreds of hours learning materials.
+This project designs a documentation page.It is one of the freeCodeCamp's required projects to get my responsive web design certification after spending hundreds of hours learning materials.
 
 ## Build with:
 * HTML5
