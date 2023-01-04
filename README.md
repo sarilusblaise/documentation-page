@@ -14,7 +14,7 @@ To get started with this project, follow the instructions below :
 
 Clone the project using git clone or just copy the command below:
 ```bash
-git clone https://github.com/Sarilus-Blaise/documentation-page.git
+git clone https://github.com/sarilusblaise/documentation-page.git
 ```
 
 
