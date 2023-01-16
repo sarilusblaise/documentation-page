@@ -8,7 +8,6 @@ const DomElement = (selector) => {
 	}
 };
 
-const closeBtn = DomElement("#close-btn");
 const openBtn = DomElement("#open-btn");
 const navbar = DomElement("#navbar");
 const display = DomElement(".display");
@@ -18,11 +17,11 @@ const linkItems = document.querySelectorAll(".link-item");
 const header = DomElement(".header");
 
 //navbar behavior
-display.addEventListener("click", function (event) {
+document.body.addEventListener("click", function (event) {
 	const id = event.target.id;
 	console.log(id);
 	if (id == "bar-open") {
-		navbar.classList.remove("hide-navbar");
+		navbar.classList.toggle("hide-navbar");
 	} else {
 		navbar.classList.add("hide-navbar");
 	}
@@ -41,9 +40,6 @@ navbar.addEventListener("click", (event) => {
 navbar.style.top = `${header.getBoundingClientRect().height}px`;
 
 //switch between light and dark mode
-closeBtn.addEventListener("click", () => {
-	navbar.classList.add("hide-navbar");
-});
 
 onLightBtn.addEventListener("click", () => {
 	document.body.classList.add("dark-mode");
@@ -55,4 +51,24 @@ offLightBtn.addEventListener("click", () => {
 	document.body.classList.remove("dark-mode");
 	offLightBtn.classList.add("hide-btnLightDarkMode");
 	onLightBtn.classList.remove("hide-btnLightDarkMode");
+});
+
+/* smooth scroll behavior*/
+const scrollLinks = document.querySelectorAll(".scroll-link");
+scrollLinks.forEach((link) => {
+	link.addEventListener("click", (e) => {
+		// prevent default
+		e.preventDefault();
+		// navigate to specific spot
+		const id = e.currentTarget.getAttribute("href").slice(1);
+		const element = document.getElementById(id);
+		const headerHeight = header.getBoundingClientRect().height;
+		let position = element.offsetTop - headerHeight;
+
+		window.scrollTo({
+			top: position,
+		});
+		// close nav
+		navbar.classList.remove("hide-navbar");
+	});
 });
