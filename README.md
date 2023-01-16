@@ -7,7 +7,7 @@ This project designs a documentation page.It is one of the freeCodeCamp's requir
 * JS
 
 ## Live demo
-live demo not available yet.
+[click here](https://sarilusblaise.github.io/documentation-page/)
 
 # Getting Started
 To get started with this project, follow the instructions below :
