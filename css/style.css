@@ -212,13 +212,12 @@ header h1 {
 }
 
 #main-doc{
-    padding: 2rem;
+padding: 2rem;
 }
 
 .main-section:not(:last-child){
     margin-bottom: 2rem;
     border-bottom: 0.000001px solid var(--sep-color);
-    padding: 1rem;
 }
 
 
